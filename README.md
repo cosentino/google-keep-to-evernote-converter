@@ -20,16 +20,13 @@ At the above URL, you can also find the motto and instructions for this script.
 2. Download your Google Keep notes with Google Takeout
 3. Extract the .HTMLs to a dir (Usually the dir is called `Keep`)
 4. Run this script providing:  
-    a. Optionally, pass "-o <output_file>.enex" (WITHOUT quotes). If not specified this script will write a file named "keep.enex" into the working directory  
+    a. Optionally, pass "-o <output_file>.enex" (WITHOUT quotes). If not specified this script print the output in console
     b. "\<dir>/*.html" as an argument (WITHOUT quotes). If not specified, this script will check for all .html files in the working directory  
 
 Usage can also be printed by passing "-h" at the command line.
 
 ```
-// Example with Keep directory
-
-python3 keep-to-enex.py Keep/*.html
-
+python keep-to-enex.py Keep/*.html -o keep.enex
 ```
 
 :+1: Tested ok under Windows, Mac and Linux
